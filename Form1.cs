@@ -15,6 +15,9 @@ namespace CopyAndArchive
         public Form1()
         {
             InitializeComponent();
+
+            filePreview = new FileToolPreview();
+            filePreview.SetListBox(listBox);
         }
 
         private void buttonSelectFile(object sender, EventArgs e)
@@ -38,5 +41,17 @@ namespace CopyAndArchive
                     textBoxDestination.Text = fbd.SelectedPath;
             }
         }
+
+        private void textBoxSource_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                FileBrowser.SearchDirectory(textBoxSource.Text, filePreview);
+            } catch
+            {
+            }
+        }
+
+        private FileToolPreview filePreview = null;
     }
 }

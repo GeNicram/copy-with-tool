@@ -139,6 +139,7 @@
             this.textBoxSource.Name = "textBoxSource";
             this.textBoxSource.Size = new System.Drawing.Size(456, 20);
             this.textBoxSource.TabIndex = 10;
+            this.textBoxSource.TextChanged += new System.EventHandler(this.textBoxSource_TextChanged);
             // 
             // listBox
             // 
