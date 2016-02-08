@@ -56,6 +56,9 @@ namespace CopyAndArchive
 
         private void buttonCopy_Click(object sender, EventArgs e)
         {
+            buttonCopy.Text = "Working...";
+            buttonCopy.Update();
+
             FileToolCommandCopy tool = new FileToolCommandCopy();
             tool.SetSource(textBoxSource.Text);
             tool.SetDestination(textBoxDestination.Text);
@@ -63,6 +66,8 @@ namespace CopyAndArchive
             tool.Tool = textBoxTool.Text;
 
             FileBrowser.SearchDirectory(textBoxSource.Text, tool);
+
+            buttonCopy.Text = "Copy";
         }
     }
 }
