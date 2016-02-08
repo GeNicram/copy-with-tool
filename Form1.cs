@@ -53,5 +53,16 @@ namespace CopyAndArchive
         }
 
         private FileToolPreview filePreview = null;
+
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            FileToolCommandCopy tool = new FileToolCommandCopy();
+            tool.SetSource(textBoxSource.Text);
+            tool.SetDestination(textBoxDestination.Text);
+            tool.Command = textBoxCommand.Text;
+            tool.Tool = textBoxTool.Text;
+
+            FileBrowser.SearchDirectory(textBoxSource.Text, tool);
+        }
     }
 }

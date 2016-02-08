@@ -41,7 +41,7 @@
             this.textBoxSource = new System.Windows.Forms.TextBox();
             this.listBox = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonDestination = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
@@ -78,7 +78,7 @@
             this.textBoxCommand.Name = "textBoxCommand";
             this.textBoxCommand.Size = new System.Drawing.Size(456, 20);
             this.textBoxCommand.TabIndex = 3;
-            this.textBoxCommand.Text = "{0} {1} {2}";
+            this.textBoxCommand.Text = "{0} {1}";
             // 
             // label2
             // 
@@ -94,9 +94,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(248, 13);
+            this.label3.Size = new System.Drawing.Size(202, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "explanation: {0} - tool, {1} - source, {2} - destination";
+            this.label3.Text = "explanation: {0} - source, {1} - destination";
             // 
             // buttonSource
             // 
@@ -158,14 +158,15 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Files to be copied with selected tool";
             // 
-            // button3
+            // buttonCopy
             // 
-            this.button3.Location = new System.Drawing.Point(15, 399);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonCopy.Location = new System.Drawing.Point(15, 399);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(75, 23);
+            this.buttonCopy.TabIndex = 14;
+            this.buttonCopy.Text = "Copy";
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // buttonDestination
             // 
@@ -191,7 +192,7 @@
             this.ClientSize = new System.Drawing.Size(564, 434);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.buttonDestination);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.textBoxSource);
@@ -227,7 +228,7 @@
         private System.Windows.Forms.TextBox textBoxSource;
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.Button buttonDestination;
         private System.Windows.Forms.ProgressBar progressBar1;
     }
