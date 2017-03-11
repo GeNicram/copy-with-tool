@@ -44,6 +44,7 @@
             this.buttonCopy = new System.Windows.Forms.Button();
             this.buttonDestination = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -92,15 +93,15 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 87);
+            this.label3.Location = new System.Drawing.Point(12, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(310, 13);
+            this.label3.Size = new System.Drawing.Size(92, 26);
             this.label3.TabIndex = 5;
-            this.label3.Text = "explanation: {0} - source, {1} - destination, {d} - directory, {f} - file";
+            this.label3.Text = "explanation:\r\nadditional options:";
             // 
             // buttonSource
             // 
-            this.buttonSource.Location = new System.Drawing.Point(477, 127);
+            this.buttonSource.Location = new System.Drawing.Point(477, 143);
             this.buttonSource.Name = "buttonSource";
             this.buttonSource.Size = new System.Drawing.Size(75, 23);
             this.buttonSource.TabIndex = 6;
@@ -111,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 113);
+            this.label4.Location = new System.Drawing.Point(12, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 13);
             this.label4.TabIndex = 7;
@@ -120,7 +121,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 152);
+            this.label5.Location = new System.Drawing.Point(12, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 13);
             this.label5.TabIndex = 8;
@@ -128,14 +129,14 @@
             // 
             // textBoxDestination
             // 
-            this.textBoxDestination.Location = new System.Drawing.Point(15, 168);
+            this.textBoxDestination.Location = new System.Drawing.Point(15, 184);
             this.textBoxDestination.Name = "textBoxDestination";
             this.textBoxDestination.Size = new System.Drawing.Size(456, 20);
             this.textBoxDestination.TabIndex = 9;
             // 
             // textBoxSource
             // 
-            this.textBoxSource.Location = new System.Drawing.Point(15, 129);
+            this.textBoxSource.Location = new System.Drawing.Point(15, 145);
             this.textBoxSource.Name = "textBoxSource";
             this.textBoxSource.Size = new System.Drawing.Size(456, 20);
             this.textBoxSource.TabIndex = 10;
@@ -144,7 +145,7 @@
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(15, 207);
+            this.listBox.Location = new System.Drawing.Point(15, 223);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(456, 186);
             this.listBox.TabIndex = 12;
@@ -152,7 +153,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 191);
+            this.label6.Location = new System.Drawing.Point(12, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(175, 13);
             this.label6.TabIndex = 13;
@@ -160,7 +161,7 @@
             // 
             // buttonCopy
             // 
-            this.buttonCopy.Location = new System.Drawing.Point(15, 399);
+            this.buttonCopy.Location = new System.Drawing.Point(15, 415);
             this.buttonCopy.Name = "buttonCopy";
             this.buttonCopy.Size = new System.Drawing.Size(75, 23);
             this.buttonCopy.TabIndex = 14;
@@ -170,7 +171,7 @@
             // 
             // buttonDestination
             // 
-            this.buttonDestination.Location = new System.Drawing.Point(477, 166);
+            this.buttonDestination.Location = new System.Drawing.Point(477, 182);
             this.buttonDestination.Name = "buttonDestination";
             this.buttonDestination.Size = new System.Drawing.Size(75, 23);
             this.buttonDestination.TabIndex = 15;
@@ -180,16 +181,27 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(96, 399);
+            this.progressBar1.Location = new System.Drawing.Point(96, 415);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(375, 23);
             this.progressBar1.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(110, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(283, 26);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "{0} - source, {1} - destination\r\nd - use file directory, n - use file name, e - u" +
+    "se file extension\r\n";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 434);
+            this.ClientSize = new System.Drawing.Size(564, 451);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.buttonDestination);
             this.Controls.Add(this.buttonCopy);
@@ -231,6 +243,7 @@
         private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.Button buttonDestination;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label label7;
     }
 }
 
