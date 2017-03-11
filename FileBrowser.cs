@@ -24,8 +24,8 @@ namespace CopyAndArchive
             foreach (FileInfo file in fileInfo)
                 fileTool.SetFile(file);
 
-            DirectoryInfo[] sudDirectories = directoryInfo.GetDirectories();
-            foreach (DirectoryInfo subdir in sudDirectories)
+            DirectoryInfo[] subDirectories = directoryInfo.GetDirectories();
+            foreach (DirectoryInfo subdir in subDirectories)
             {
                 fileTool.SetDirectory(subdir);
                 SearchDirectory(subdir.FullName, fileTool);
