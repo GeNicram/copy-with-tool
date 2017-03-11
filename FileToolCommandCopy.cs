@@ -27,14 +27,12 @@ namespace CopyAndArchive
             string destination;
             if (path.DirectoryName == source_.FullName)
             {
-                destination = Path.Combine(destination_.FullName,
-                    Path.GetFileNameWithoutExtension(path.Name));
+                destination = destination_.FullName;
             }
             else
             {
                 destination = Path.Combine(destination_.FullName,
-                    path.DirectoryName.Substring(source_.FullName.Length + 1),
-                    Path.GetFileNameWithoutExtension(path.Name));
+                    path.DirectoryName.Substring(source_.FullName.Length + 1));
             }
 
             ProcessWorker.Run(command_, tool_,

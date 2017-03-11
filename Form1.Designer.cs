@@ -94,9 +94,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(202, 13);
+            this.label3.Size = new System.Drawing.Size(310, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "explanation: {0} - source, {1} - destination";
+            this.label3.Text = "explanation: {0} - source, {1} - destination, {d} - directory, {f} - file";
             // 
             // buttonSource
             // 
